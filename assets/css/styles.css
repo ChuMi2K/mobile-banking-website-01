@@ -56,6 +56,13 @@ button {
     font-weight: 600;
 }
 
+.section-heading {
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25; /* 119.231% */
+}
+
 /* Header */
 .header {
     padding-top: 42px;
@@ -166,7 +173,7 @@ button {
     position: absolute;
     width: 18px;
     height: 2px;
-    background: #696D77;
+    background: #696d77;
     top: 50%;
     left: -28px;
 }
@@ -179,7 +186,7 @@ button {
 }
 
 .hero__strong {
-    color: #7264D6;
+    color: #7264d6;
 }
 
 .hero__desc {
@@ -187,7 +194,7 @@ button {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.66; /* 166.667% */
-    margin-top: 20px; ;
+    margin-top: 20px;
 }
 
 .hero-search {
@@ -254,4 +261,99 @@ button {
 .hero_media-wrap__img {
     width: 100%;
     display: block;
+}
+
+/* Work */
+.work {
+    margin-top: 160px;
+}
+
+.work__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+
+.work__media {
+    position: relative;
+}
+
+.work__media-wrapper {
+    /* display: flex; */
+    position: relative;
+    width: 470px;
+    height: 619px;
+}
+
+.work__media-wrapper::before {
+    content: url(../img/work-decor1.png);
+    position: absolute;
+    bottom: -3px;
+    z-index: -1;
+}
+
+.work__media::before {
+    content: url(../img/work-decor2.png);
+    position: absolute;
+    right: 62px;
+    top: 76px;
+}
+
+.work__media::after {
+    content: url(../img/work-decor3.png);
+    position: absolute;
+    right: -150px;
+    bottom: 38px;
+}
+
+.work__media-img {
+    width: 456px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.work__content {
+    margin-left: 100px;
+}
+
+.work__label {
+    margin-bottom: 12px;
+    color: #696d77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+    position: relative;
+    padding-left: 25px;
+}
+
+.work__label::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    display: block;
+    background-color: #696D77;
+    top: 14px;
+    left: 0;
+}
+
+.work__heading {
+    margin-bottom: 70px;
+}
+
+.work__heading-child {
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45; /* 145.455% */
+    margin-bottom: 16px;
+}
+
+.work__desc {
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+    margin-bottom: 30px;
 }
